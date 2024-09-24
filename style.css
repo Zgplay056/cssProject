@@ -3,11 +3,31 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
 .container {
     flex: 1;
 }
-
 .footer {
     text-align: center;
 }
+.left{
+    display: flex;
+    margin-left: 12px;
+}
+
+:root {
+    --background-color-light: white;
+    --background-color-dark: #020617;
+    --text-color-light: 	color: rgb(75 85 99);
+    --text-color-dark: #5f67d6;
+ 
+}
+
+body.lightMode {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+  }
+
+  body.darkMode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
