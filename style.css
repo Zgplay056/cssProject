@@ -9,11 +9,10 @@ body {
 .footer {
     text-align: center;
 }
-.left{
-    display: flex;
-    margin-left: 12px;
+.left-button {
+    margin-left: auto;
 }
-
+/* css variables and the classes to the darkmode */
 :root {
     --background-color-light: white;
     --background-color-dark: #020617;
@@ -31,3 +30,39 @@ body.lightMode {
     background-color: var(--background-color-dark);
     color: var(--text-color-dark);
   }
+
+/* That's the border */
+ 
+    .animated-border {
+        position: relative;
+        padding: 20px;
+        color: black;
+    }
+
+    .animated-border::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        background: linear-gradient(to right, purple, red, blue, yellow, rgb(221, 73, 147), green, orange);
+        z-index: -1;
+        background-size: 400% 400%;
+        animation: gradient-animation 20s infinite;
+    }
+
+    @keyframes gradient-animation {
+        0% { background-position: 0% 50%; }
+        14.28% { background-position: 14.28% 50%; }
+        28.56% { background-position: 28.56% 50%; }
+        42.84% { background-position: 42.84% 50%; }
+        57.12% { background-position: 57.12% 50%; }
+        71.4% { background-position: 71.4% 50%; }
+        85.68% { background-position: 85.68% 50%; }
+        100% { background-position: 100% 50%; }
+    }
+
+
+  /* Here are the colors to variate at the border */ 
+
