@@ -50,6 +50,6 @@ foco.addEventListener('click', () => {
 });
 
 toDo.addEventListener('click', () => {
-  alterar.innerHTML = '<h1>A Fazeres</h1><p>Conteúdo da página...</p>';
+  alterar.innerHTML = '<h1>AFazeres</h1><p>Conteúdo da página...</p>';
 });
 
