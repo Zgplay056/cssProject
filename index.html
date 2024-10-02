@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
+
 <body class="lightMode">
     <!--the Navbar starts here!-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light animated-border">
         <a class="navbar-brand" href="#">TAGS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!--here starts the content of the Navbar-->
@@ -22,25 +26,32 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="foco">Foco</a>
-                </li> 
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="estudos">Estudos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id=>To Do</a> 
+                    <a class="nav-link" href="#" id='toDo'>To Do</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">+Mais Tags</a>
                 </li>
                 <li>
-                    <button type="button" class="btn btn-dark ml-auto" onclick="darkLight()">Dark</button> 
-                 </li>
+                    <div class="ml-auto">
+                        <input type="checkbox" id="darkModeToggle" class="checkbox" onclick='darkLight()'>
+                        <label for="darkModeToggle" class="label">
+                            <i class="bi bi-moon bolinea_de_golfe icon" id="icon"></i>
+                        
+                        </label>
+                    </div>
+                </div>
+                </li>
             </ul>
         </div>
-        
+
     </nav>
 
-    <div class="container mt-5" id="alterar">
+    <div class="container mt-5 bg-light" id="alterar">
         <h1>Bem-vindo à Página de Navegação</h1>
         <p>Conteúdo da página...</p>
     </div>
@@ -56,4 +67,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
